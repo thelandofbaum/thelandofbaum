@@ -15,7 +15,7 @@ body::after {
   height: 0;
   overflow: hidden;
   z-index: -1;
-  content: url("/img/background0.jpg") url("/img/background1.jpg") url("/img/background2.png") url("/img/background3.jpg") url("/img/background4.png") url("/img/background5.png") url("/img/background6.jpg");
+  content: url("img/background0.jpg") url("img/background1.jpg") url("img/background2.png") url("img/background3.jpg") url("img/background4.png") url("img/background5.png") url("img/background6.jpg");
 }
 .debug {
   position: absolute;
@@ -26,7 +26,7 @@ body::after {
 .backgroundImage {
   width: 100vw;
   height: 100vh;
-  background-image: url("/img/background0.jpg");
+  background-image: url("img/background0.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

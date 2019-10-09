@@ -16,10 +16,9 @@ const setWidthHeight = (event) => {
 
 window.addEventListener("resize", setWidthHeight);
 
-// backgroundImage.style.backgroundImage = `url("/img/${backgroundList[i]}")`;
 let backgroundIteration = 0;
 const backgroundSlide = () => {
-  backgroundImage.style.backgroundImage = `url("/img/${backgroundList[backgroundIteration]}")`;
+  backgroundImage.style.backgroundImage = `url("img/${backgroundList[backgroundIteration]}")`;
   backgroundIteration++;
   
   if (backgroundIteration == backgroundList.length) {
