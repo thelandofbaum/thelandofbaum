@@ -37,7 +37,7 @@ body::after {
   transform: translateY(-100vh);
   transition: 1.5s;
   transition-delay: 2s;
-  transition-timing-function: linear;
+  transition-timing-function: ease-in;
 }
 .slide1 {
   background-image: url("../img/slide1.png");
@@ -48,7 +48,7 @@ body::after {
   transform: translateY(-100vh);
   transition: 1.5s;
   transition-delay: 2s;
-  transition-timing-function: linear;
+  transition-timing-function: ease-in;
   position: absolute;
   z-index: 10;
 }
@@ -61,30 +61,30 @@ body::after {
 }
 .slide2 {
   background-image: url("../img/dirt.png");
-  transition: 2s;
-  transition-delay: 2s;
-  transition-timing-function: linear;
+  transition: 1.5s;
+  transition-delay: 2.1s;
+  transition-timing-function: ease-in;
   z-index: 9;
 }
 .slide3 {
   background-image: url("../img/stone.png");
-  transition: 2.5s;
-  transition-delay: 2s;
-  transition-timing-function: linear;
+  transition: 1.5s;
+  transition-delay: 2.2s;
+  transition-timing-function: ease-in;
   z-index: 8;
 }
 .slide4 {
   background-image: url("../img/lava_still.png");
-  transition: 3s;
-  transition-delay: 2s;
-  transition-timing-function: linear;
+  transition: 1.5s;
+  transition-delay: 2.3s;
+  transition-timing-function: ease-in;
   z-index: 7;
 }
 .slide5 {
   background-image: url("../img/bedrock.png");
-  transition: 3.5s;
-  transition-delay: 2s;
-  transition-timing-function: linear;
+  transition: 1.5s;
+  transition-delay: 2.4s;
+  transition-timing-function: ease-in;
   z-index: 6;
 }
 .backgroundImage {
