@@ -1,131 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Calistoga&display=swap');
 * {
-  margin: 0px;
-  padding: 0px;
-  text-align: center;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
 }
-*:any-link {
-  text-decoration: none;
-}
-body {
-  background-color: #23272A;
-}
-body::after {
-  position: absolute;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-  z-index: -1;
-  content: url("../img/slide1.png") url("../img/dirt.png") url("../img/stone.png") url("../img/lava_still.png") url("../img/bedrock.png") url("../img/background0.jpg") url("../img/background1.jpg") url("../img/background2.png") url("../img/background3.jpg") url("../img/background4.png") url("../img/background5.png") url("../img/background6.jpg");
-}
-.debug {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border: 1px solid red;
-}
-.slides {
 
+*:any-link {
+	text-decoration: none;
 }
+
+body {
+	background-color: #23272A;
+}
+
+body::after {
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	z-index: -1;
+	content: url("../img/slide1.png") url("../img/dirt.png") url("../img/stone.png") url("../img/lava_still.png") url("../img/bedrock.png") url("../img/background0.jpg") url("../img/background1.jpg") url("../img/background2.png") url("../img/background3.jpg") url("../img/background4.png") url("../img/background5.png") url("../img/background6.jpg");
+}
+
+.debug {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	border: 1px solid red;
+	display: none;
+}
+
+.slides {}
+
 .logo {
-  position: absolute;
-  z-index: 11;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(-100vh);
-  transition: 1.5s;
-  transition-delay: 2.5s;
-  transition-timing-function: ease-in;
+	position: absolute;
+	z-index: 11;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(-100vh);
+	transition: 1.5s;
+	transition-delay: 2.5s;
+	transition-timing-function: ease-in;
 }
+
 .slide1 {
-  background-image: url("../img/slide1.png");
-  width: 100vw;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transform: translateY(-100vh);
-  transition: 1.5s;
-  transition-delay: 2.5s;
-  transition-timing-function: ease-in;
-  position: absolute;
-  z-index: 10;
+	background-image: url("../img/slide1.png");
+	width: 100vw;
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: translateY(-100vh);
+	transition: 1.5s;
+	transition-delay: 2.5s;
+	transition-timing-function: ease-in;
+	position: absolute;
+	z-index: 10;
 }
-.slide2, .slide3, .slide4, .slide5 {
-  width: 100vw;
-  height: 100vh;
-  background-size: 64px;
-  position: absolute;
-  transform: translateY(-100vh);
-}
-.slide2 {
-  background-image: url("../img/dirt.png");
-  transition: 1.5s;
-  transition-delay: 2.6s;
-  transition-timing-function: ease-in;
-  z-index: 9;
-}
-.slide3 {
-  background-image: url("../img/stone.png");
-  transition: 1.5s;
-  transition-delay: 2.7s;
-  transition-timing-function: ease-in;
-  z-index: 8;
-}
-.slide4 {
-  background-image: url("../img/lava_still.png");
-  transition: 1.5s;
-  transition-delay: 2.8s;
-  transition-timing-function: ease-in;
-  z-index: 7;
-}
+
+.slide2,
+.slide3,
+.slide4,
 .slide5 {
-  background-image: url("../img/bedrock.png");
-  transition: 1.5s;
-  transition-delay: 2.9s;
-  transition-timing-function: ease-in;
-  z-index: 6;
+	width: 100vw;
+	height: 100vh;
+	background-size: 64px;
+	position: absolute;
+	transform: translateY(-100vh);
 }
+
+.slide2 {
+	background-image: url("../img/dirt.png");
+	transition: 1.5s;
+	transition-delay: 2.6s;
+	transition-timing-function: ease-in;
+	z-index: 9;
+}
+
+.slide3 {
+	background-image: url("../img/stone.png");
+	transition: 1.5s;
+	transition-delay: 2.7s;
+	transition-timing-function: ease-in;
+	z-index: 8;
+}
+
+.slide4 {
+	background-image: url("../img/lava_still.png");
+	transition: 1.5s;
+	transition-delay: 2.8s;
+	transition-timing-function: ease-in;
+	z-index: 7;
+}
+
+.slide5 {
+	background-image: url("../img/bedrock.png");
+	transition: 1.5s;
+	transition-delay: 2.9s;
+	transition-timing-function: ease-in;
+	z-index: 6;
+}
+
 .backgroundImage {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../img/background0.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 1000ms;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../img/background0.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 1000ms;
 }
+
 .container {
-  min-width: 300px;
-  width: 700px;
-  height: 800px;
-  backdrop-filter: blur(5px);
-  margin: auto;
-  box-shadow: 0px 0px 100px 20px black;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	min-width: 300px;
+	width: 700px;
+	height: 800px;
+	backdrop-filter: blur(5px);
+	margin: auto;
+	box-shadow: 0px 0px 100px 20px black;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
 }
-.discordEmbed {
+
+.serverStatus {
+	width: 350px;
+	height: 100px;
+	background: black center/contain url("../img/tlob256.webp") no-repeat;
+	color: white;
+	position: relative;
+	font-family: 'Calistoga', cursive;
+	font-size: 0.9rem;
+	cursor: pointer;
 }
+
+.statusOnline,
+.statusOffline {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	margin: 2px;
+}
+
+.statusOnline {
+	color: lime;
+}
+
+.statusOffline {
+	color: red;
+}
+
+.version {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin: 2px;
+}
+
+.players {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	margin: 2px;
+}
+
+.serverUrl {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	margin: 2px;
+}
+
+.copied {
+	background-color: #23272A;
+	color: white;
+	width: 350px;
+	font-weight: bold;
+	visibility: hidden;
+}
+
+.discordEmbed {}
+
 .discordButton {
-  background-color: #7289DA;
-  width: 150px;
-  padding: 10px;
-  border-radius: 20px;
-  margin: 20px auto;
-  cursor: pointer;
-  transition: 500ms;
+	background-color: #7289DA;
+	width: 150px;
+	padding: 10px;
+	border-radius: 20px;
+	margin: 20px auto;
+	cursor: pointer;
+	transition: 500ms;
+	font-family: 'Calistoga', cursive;
 }
+
 .discordButton a {
-  color: #ffffff;
+	color: #ffffff;
 }
+
 .discordButton:hover {
-  transform: scale(1.05);
+	transform: scale(1.05);
 }
