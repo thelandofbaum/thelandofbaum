@@ -216,7 +216,7 @@ body::after {
 	width: 150px;
 	padding: 10px;
 	border-radius: 20px;
-	margin: 20px auto;
+	margin: 0px auto;
 	cursor: pointer;
 	transition: 500ms;
 	font-family: 'Calistoga', cursive;
